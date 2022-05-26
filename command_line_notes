@@ -1,0 +1,56 @@
+Monday, May 16, 2022
+
+# Command line
+
+# Command Line Interface
+
+## Context
+- CLI predates Windows/Mac OS
+- The first computers didn't have a mouse
+- "What You See Is What You Get" with Graphical User Interface (GUI) - you see icons, menus
+    - Good side of GUI: easy adoption, if it's in the menu, you can do the thing.
+    - Downside of GUI: what you see is ALL you get.
+    - Upside to CLI: the sky is the limit w/r/t functionality. 
+    - Downside to CLI: it's not terribly untuitive
+
+## What we're doing is learning to talk to your computer
+- How to tell your computer what you need
+- Adopt using the CLI for file/folder management tasks. 
+- Anything you learn here on CLI transfers to Linux machines
+
+## Vocabulary
+- "Terminal" is an application on your Mac.
+- Terminal talks to the Shell, shell executes commands  
+
+~ means "Home directory". Your home directory is the main directory for your currently logged-in user
+
+## Finder commands
+- command key + up-arrow
+
+# Drills
+echo $SHELL
+echo Hello
+pwd
+`open .` opens the current working directory in Finder (visually)
+
+## Useful Things to Know
+- Tab autocomplete:
+    - Terminal knows it's tough to type a bunch of stuff
+    - If you're typing a folder/file name and you already have the first unique characters, hit TAB and you'll experience autocomplete.
+- man command_name pulls up the manual page for that command_name
+If you're seeing paginated results from the terminal and cannot exit, type “q”
+
+## File/Folder Paths
+- When you type `pwd`, you get back the full (absolute) file path to where you are
+- Absolute path is the full and complete file path to a folder/file.
+- Absolute path starts with /
+- /Users/your_username/some_folder
+- Relative paths are relative to where you currently are (is pwd)
+- `~` is short for your home directory, whatever your currently logged in user is.
+- `cd ..` goes up a directory from your `pwd`
+- `cd ../..` goes up two folders from your `pwd`
+
+## Commands
+- `mv source destination` and source could be relative or absolute and so can the destination
+- Renaming a file is moving it to the same folder w/ a different name
+- `rm` removes a file completely (does NOT go to the Trash). Recommend using Finder/Delete for removing files
